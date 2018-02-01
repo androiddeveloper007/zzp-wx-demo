@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/keyboard_abc_delete_nom"/>
+    <item android:drawable="@drawable/abc_shift"
+        android:bottom="@dimen/dimen_12"
+        android:top="@dimen/dimen_12"
+        android:left="@dimen/dimen_13"
+        android:right="@dimen/dimen_13"/>
+
+</layer-list>

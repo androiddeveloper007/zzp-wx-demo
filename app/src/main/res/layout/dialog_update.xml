@@ -1,0 +1,106 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/basetitle_bg_radian_v1"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:orientation="horizontal"
+                  android:layout_marginBottom="@dimen/dimen_3">
+        <TextView
+            android:id="@+id/tv_update_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_17"
+            android:text="发现新版本:3.6.0"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/dimen_16"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_update_tip"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_17"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:text="（重要更新）"
+            android:textColor="@color/default_bg"
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_updatelog"
+        android:divider="@null"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_marginBottom="@dimen/dimen_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ll_update_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:gravity="right">
+
+        <CheckBox
+            android:id="@+id/cb_update"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:text="不再提醒"
+            android:textColor="@color/line_color"
+            android:textSize="@dimen/dimen_14"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/tv_update_left"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingBottom="@dimen/dimen_2"
+                android:paddingTop="@dimen/dimen_2"
+                android:text="下次再说"
+                android:textColor="@color/color_1a98ff"
+                android:textSize="@dimen/dimen_16"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_update_right"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_2"
+                android:paddingTop="@dimen/dimen_2"
+                android:text="马上更新"
+                android:textColor="@color/color_1a98ff"
+                android:textSize="@dimen/dimen_16"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

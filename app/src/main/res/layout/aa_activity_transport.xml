@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/navigation_cg"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_transport_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/transport_bg"/>
+
+        <library.widget.NumberAnimTextView
+            android:id="@+id/tv_old_account"
+            android:layout_width="@dimen/dimen_120"
+            android:layout_height="@dimen/dimen_35"
+            android:text="0.00"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/dimen_14"
+            android:layout_toLeftOf="@+id/iv_transport"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@drawable/et_bg_transport"
+            android:paddingLeft="@dimen/dimen_15"/>
+
+        <library.widget.NumberAnimTextView
+            android:id="@+id/tv_new_account"
+            android:layout_width="@dimen/dimen_120"
+            android:layout_height="@dimen/dimen_35"
+            android:text="0.00"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/dimen_14"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_transport"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:background="@drawable/et_bg_transport"
+            android:paddingLeft="@dimen/dimen_15"/>
+
+        <ImageView
+            android:id="@+id/iv_transport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/transport"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_12"
+            android:textColor="@color/white"
+            android:text="原账户可用余额（元）"
+            android:layout_below="@+id/tv_old_account"
+            android:layout_toLeftOf="@+id/iv_transport"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_marginRight="@dimen/dimen_10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_12"
+            android:textColor="@color/white"
+            android:text="渤海存管账户（元）"
+            android:layout_below="@+id/tv_new_account"
+            android:layout_toRightOf="@+id/iv_transport"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_marginLeft="@dimen/dimen_10"/>
+
+        <TextView
+            android:id="@+id/btn_transport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transport_btn_selector"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/iv_transport"
+            android:text="开始迁移"
+            android:gravity="center"
+            android:textColor="#FD6A50"
+            android:textSize="@dimen/dimen_12"
+            android:layout_marginTop="@dimen/dimen_80"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

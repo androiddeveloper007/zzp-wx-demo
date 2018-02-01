@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cstz.cstz_android"
+    android:versionCode="22"
+    android:versionName="4.0"
+    android:anyDensity="true" >
+    <!--21 3.6.7-->
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- share sdk -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/log"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:name="com.cstz.common.App" >
+        <activity
+            android:name="com.cstz.front.SplashScreen"
+            android:theme="@style/SplashTheme"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.cstz.tab.MainActivity"
+            android:label="@string/Xiangqing"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.cstz.front.Register"
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/Register"
+            android:theme="@style/LoginTheme"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.cstz.front.Login"
+            android:label="@string/Login"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:launchMode="singleTop"
+            android:theme="@style/LoginTheme"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.cstz.common.Web"
+            android:label="@string/Huankuan"
+            android:screenOrientation="portrait" />
+
+        <!--<activity
+            android:name="com.cstz.usercenter.setting.UpdateLoginPwd"
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/Loginmima"
+            android:screenOrientation="portrait" />-->
+
+        <activity
+            android:name="com.cstz.cunguan.activity.UpdatePayPwd"
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/Paymima"
+            android:screenOrientation="portrait" />
+
+        <!--<activity
+            android:name="com.cstz.usercenter.setting.UpdatePayPwd_idNo"
+            android:windowSoftInputMode="stateVisible"
+            android:label="@string/Paymima"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.cstz.usercenter.setting.UpdatePayPwd_Update"
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/Paymima"
+            android:screenOrientation="portrait" />-->
+
+        <activity
+            android:name="com.cstz.front.findpwd.FindPwd"
+            android:label="@string/Losepassword"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.cstz.front.findpwd.FindPwd_idNo"
+            android:label="@string/Losepassword"
+            android:windowSoftInputMode="stateVisible"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.cstz.front.findpwd.FindPwd_Update"
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/Losepassword2"
+            android:screenOrientation="portrait" />
+
+        <!--<activity
+            android:name="com.cstz.usercenter.FundList"
+            android:label="@string/Moneymx"
+            android:screenOrientation="portrait" />-->
+
+        <activity
+            android:name="com.cstz.usercenter.TiXian"
+            android:label="@string/Tixian"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.cstz.usercenter.TiXianRecord"
+            android:label="@string/TixianRecord"
+            android:screenOrientation="portrait" />
+
+        <!--<activity
+            android:name="com.cstz.usercenter.Recharge"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:label="@string/Chongzhi"
+            android:screenOrientation="portrait" />-->
+
+        <!--<activity
+            android:name="com.cstz.usercenter.bank.BankCard"
+            android:label="@string/Mycard"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.cstz.usercenter.bank.BankCardAdd"
+            android:label="@string/Addcard"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />-->
+
+        <!--<activity
+            android:name="com.cstz.usercenter.InvestRecord"
+            android:label="@string/Myxiangmu"
+            android:screenOrientation="portrait" />-->
+
+        <activity
+            android:name="com.cstz.front.Invest"
+            android:label="@string/Buyxiangmu"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.cstz.front.viewpager.ViewPager"
+            android:label="viewpager"
+            android:screenOrientation="portrait" />
+
+        <!-- 实名认证 -->
+        <!--<activity
+            android:name="com.cstz.usercenter.BindRealName"
+            android:label="@string/BindRealName"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />-->
+
+        <!-- 设置 -->
+        <!--<activity
+            android:name="com.cstz.usercenter.Setting"
+            android:label="@string/Setting"
+            android:screenOrientation="portrait" />
+
+        &lt;!&ndash;二维码&ndash;&gt;
+        <activity
+            android:name="com.cstz.usercenter.setting.InviteFriends"
+            android:label="@string/InviteFriends"
+            android:screenOrientation="portrait" />
+
+        &lt;!&ndash; 个人资料 &ndash;&gt;
+        <activity
+            android:name="com.cstz.usercenter.Personaldata"
+            android:label="@string/PersonalData"
+            android:screenOrientation="portrait" />
+
+        &lt;!&ndash; 性别 &ndash;&gt;
+        <activity
+            android:name="com.cstz.usercenter.setting.Sex"
+            android:label="@string/Sex"
+            android:screenOrientation="portrait" />
+
+        &lt;!&ndash; 昵称 &ndash;&gt;
+        <activity
+            android:name="com.cstz.usercenter.setting.NickName"
+            android:label="@string/Add_nickname"
+            android:windowSoftInputMode="stateVisible"
+            android:screenOrientation="portrait" />
+
+        &lt;!&ndash; 地址&ndash;&gt;
+        <activity
+            android:name="com.cstz.usercenter.setting.Address"
+            android:label="@string/Add_address"
+            android:windowSoftInputMode="stateVisible"
+            android:screenOrientation="portrait" />
+
+        &lt;!&ndash; 站内信&ndash;&gt;
+        <activity
+            android:name="com.cstz.usercenter.MailList"
+            android:label="@string/MailList"
+            android:screenOrientation="portrait" />
+
+        &lt;!&ndash; 查看站内信&ndash;&gt;
+        <activity
+            android:name="com.cstz.usercenter.MailDetail"
+            android:label="@string/MailDetail"
+            android:screenOrientation="portrait" />-->
+
+        <!-- 引导页-->
+        <activity
+            android:name="com.cstz.front.GuideActivity"
+            android:configChanges="keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" />
+
+        <!-- 产品详情页 -->
+        <activity
+            android:name="com.cstz.front.ProductActivity"
+            android:configChanges="keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的红包-->
+        <!--<activity
+            android:name="com.cstz.usercenter.MyRedEnvelope"
+            android:label="@string/MailDetail"
+            android:screenOrientation="portrait" />-->
+
+        <!-- 添加银行卡2-->
+        <!--<activity
+            android:name="com.cstz.usercenter.bank.BankCardAdd_two"
+            android:label="@string/MailDetail"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />-->
+
+        <!-- 选择红包-->
+        <activity
+            android:name="com.cstz.front.product_hongbao"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <!-- 银行错误页面-->
+        <!--<activity
+            android:name="com.cstz.usercenter.bank.BankCardAdd_error"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />-->
+
+        <!-- 编辑银行卡-->
+        <!--<activity
+            android:name="com.cstz.usercenter.bank.EditorBankCard"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />-->
+
+        <!-- 充值成功-->
+        <!--<activity
+            android:name="com.cstz.front.ChongzhiSuccess"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        &lt;!&ndash; 充值失败&ndash;&gt;
+        <activity
+            android:name="com.cstz.front.ChongzhiFail"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />-->
+
+        <!--<activity android:name="com.cstz.front.PullupseedetailDemo"/>-->
+        <activity android:name="control.pattern.CreatePatternPwdActivity" />
+        <activity android:name="control.pattern.UnlockGesturePasswordActivity" />
+        <activity android:name="com.cstz.usercenter.setting.ChangePattern" />
+        <activity android:name="control.pattern.ForgetPatternComfirm"
+                  android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.cstz.front.InviteReward" />
+        <activity
+            android:name="com.cstz.common.WebViewRelease"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="sdksample"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cstz.common.WebViewReleaseCg"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="sdksample"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cstz.cunguan.activity.FundDetail" />
+        <activity android:name="com.cstz.cunguan.activity.FundDetailOld" />
+        <activity android:name="com.cstz.cunguan.activity.InvestRecord" />
+        <activity android:name="com.cstz.cunguan.activity.InvestRecordOld" />
+        <activity android:name="com.cstz.cunguan.activity.Repayment" />
+        <activity android:name="com.cstz.cunguan.activity.CgSetting"/>
+        <activity android:name="com.cstz.cunguan.activity.AccountSafety"/>
+        <activity android:name="com.cstz.cunguan.activity.UpdateLoginPwd"
+                  android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.cstz.cunguan.activity.Recharge"
+                  android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name="com.cstz.cunguan.activity.CgBindRealName"
+                  android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.cstz.cunguan.activity.MessageCenter"/>
+        <activity android:name="com.cstz.cunguan.activity.MessageDetail"/>
+        <activity android:name="com.cstz.cunguan.activity.WithDraw"
+                  android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.cstz.cunguan.activity.RedPacket"/>
+        <activity android:name="com.cstz.cunguan.activity.WithDrawRecord"/>
+        <!--<activity android:name="com.cstz.cunguan.activity.WithDrawTips"/>-->
+        <activity android:name="com.cstz.cunguan.activity.BankCard"
+                  android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.cstz.cunguan.activity.Transport"/>
+        <activity android:name="com.cstz.cunguan.activity.ChangePhone"
+                  android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.cstz.cunguan.activity.BorrowerFundDetail"/>
+        <activity android:name="com.cstz.cunguan.activity.BankCardCg"/>
+        <activity android:name="com.cstz.cunguan.activity.RepaymentSet"/>
+        <!--<activity android:name="com.cstz.cunguan.fingerprint.FingerPrintUnlockActivity" />
+        <activity android:name="com.cstz.cunguan.fingerprint.FingerPrintConfigActivity" />
+        <activity android:name="com.cstz.usercenter.setting.ChangeFingerprintState" />-->
+        <activity android:name="com.cstz.cunguan.activity.RechargeAccount" />
+        <activity android:name="com.cstz.cunguan.activity.BorrowerFundDetailOfPublic" />
+
+        <!-- share sdk -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!-- QQ和QQ空间分享 QQ登录的回调必须要配置的 -->
+            <intent-filter>
+                <data android:scheme="tencent1105023417" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <meta-data android:name="Mob-AppKey" android:value="1f2ff5a6e048a"/>
+        <meta-data android:name="Mob-AppSecret" android:value="f98c223fc4b913cf0cd3d1847597864f"/>
+        <!-- share sdk end --><!---->
+    </application>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- share sdk end -->
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+</manifest>

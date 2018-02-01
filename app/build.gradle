@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+
+    defaultConfig {
+        applicationId "com.cstz.cstz_android"
+        minSdkVersion 16
+        targetSdkVersion 23
+    }
+
+    dexOptions {
+        maxProcessCount 4
+        javaMaxHeapSize "2g"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("android.keystore")
+            storePassword '123123'
+            keyAlias 'android.keystore'
+            keyPassword '123123'
+        }
+
+        debug {
+            keyAlias 'android.keystore'
+            keyPassword '123123'
+            storeFile file('H:/wxcf_app_androidstudio/android.keystore')
+            storePassword '123123'
+        }
+    }
+
+    buildTypes {
+        debug {
+            zipAlignEnabled true
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            zipAlignEnabled true
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+//repositories {
+//    flatDir { dirs 'libs' }//作用是添加一个本地仓库,并把libs目录当做仓库地址
+//}
+
+dependencies {
+    compile files('libs/library.jar')
+
+    compile files('libs/nineoldandroids-2.4.0.jar')//全屏图片浏览控件
+
+    compile files('libs/sunjce_provider.jar')//地区选择控件
+
+//    compile files('libs/core-2.2.jar')//加密算法//生成二维码
+
+    compile project(':nicespinner')
+//    compile project(path: ':tabLayoutLib')
+
+    compile 'cn.bingoogolapple:bga-banner:2.0.9@aar'//可循环的viewpager
+
+    compile 'com.github.bumptech.glide:glide:3.7.0'//图片加载库
+
+    compile 'com.jakewharton:butterknife:8.0.1'//bufferknife
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.0.1'//    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+
+//        debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'//检测内存泄露的工具
+    compile files('libs/ShareSDK-Core-3.0.0.jar')
+    compile files('libs/ShareSDK-Wechat-3.0.0.jar')
+    compile files('libs/ShareSDK-Wechat-Core-3.0.0.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-3.0.0.jar')
+    compile files('libs/MobTools-2017.0608.1618.jar')
+    compile files('libs/MobCommons-2017.0608.1618.jar')
+    //    compile files('libs/wechat-sdk-android-without-mta-1.3.4.jar')
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'
+    compile 'com.lzy.widget:view-core:0.2.1'//可折叠的viewpager
+    compile project(':refresh-header')
+    compile project(':refresh-layout')
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support:design:26.+'
+    compile project(path: ':rxfinger')
+}

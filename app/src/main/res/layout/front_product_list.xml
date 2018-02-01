@@ -1,0 +1,218 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_2"
+    android:layout_marginRight="@dimen/dimen_2"
+    android:layout_marginTop="@dimen/dimen_2"
+    android:background="@color/base_start_color_pressed">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5"
+        android:background="@drawable/ll_product_selector"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15">
+            <TextView
+                android:id="@+id/index_product_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_3"
+                android:layout_toRightOf="@+id/imageview_xins"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:lineSpacingExtra="2dp"
+                android:maxLines="2"
+                android:paddingRight="@dimen/dimen_15"
+                android:paddingTop="@dimen/dimen_10"
+                android:textColor="#666666"
+                android:textSize="@dimen/dimen_17"/>
+            <ImageView
+                android:id="@+id/imageview_xins"
+                android:layout_width="@dimen/dimen_36"
+                android:layout_height="@dimen/dimen_18"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/dimen_13"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <library.widget.progressbarcg.FloatTextProgressBar
+                android:id="@+id/progressBar_index"
+                android:layout_width="@dimen/dimen_product_progress"
+                android:layout_height="@dimen/dimen_27"
+                android:layout_marginLeft="@dimen/dimen_30"
+                app:backgroundColor="#d8d8d8"
+                app:fillColorProgress="#E04745"
+                app:rectColor="#FFA5A5"
+                app:textColor="#fff"
+                app:triangleColor="#FFA5A5"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:paddingBottom="@dimen/dimen_20">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:id="@+id/ll_annualRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:paddingBottom="@dimen/dimen_20">
+                    <TextView
+                        android:id="@+id/textView_annualRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14.0%"
+                        android:textColor="#e04745"
+                        android:textSize="@dimen/dimen_28"/>
+                    <TextView
+                        android:id="@+id/textView_annualRate_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/textView_annualRate"
+                        android:text="+0.5%"
+                        android:textColor="#e04745"
+                        android:textSize="@dimen/dimen_14"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_annualRate"
+                    android:layout_centerHorizontal="true"
+                    android:text="年化收益率"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/dimen_12.5"/>
+            </RelativeLayout>
+            <View android:layout_width="2px"
+                  android:layout_height="match_parent"
+                  android:layout_marginBottom="@dimen/dimen_10"
+                  android:layout_marginTop="@dimen/dimen_10"
+                  android:background="@color/line1"/>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5" android:paddingTop="@dimen/dimen_10">
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent" android:orientation="vertical">
+
+                    <View android:id="@+id/view_balance" android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="0.8" android:visibility="visible"/>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp" android:layout_weight="1" android:id="@+id/ll_source"
+                                  android:layout_marginTop="@dimen/dimen_2">
+                        <ImageView android:layout_width="@dimen/dimen_14"
+                                   android:layout_height="@dimen/dimen_13"
+                                   android:layout_marginLeft="@dimen/dimen_10"
+                                   android:src="@drawable/icon_source" android:layout_marginTop="@dimen/dimen_2"/>
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_3"
+                                  android:text="来源:" android:textColor="#999999"
+                                  android:textSize="@dimen/dimen_12" android:gravity="bottom"/>
+                        <TextView
+                            android:id="@+id/textview_publisher" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="54564565646" android:textColor="#999999"
+                            android:textSize="@dimen/dimen_12" android:gravity="bottom"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp" android:layout_weight="1" android:id="@+id/ll_money"
+                                  android:layout_below="@+id/ll_source" android:layout_marginTop="@dimen/dimen_3">
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_28"
+                                  android:text="融资金额：" android:textColor="#999999"
+                                  android:textSize="@dimen/dimen_12"/>
+                        <TextView
+                            android:id="@+id/textview_jiner" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5"
+                            android:text="654" android:textColor="#999999"
+                            android:textSize="@dimen/dimen_12"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp" android:layout_weight="1" android:id="@+id/ll_days"
+                                  android:layout_below="@+id/ll_money" android:layout_marginTop="@dimen/dimen_3">
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_28"
+                                  android:text="投资期限：" android:textColor="#999999"
+                                  android:textSize="@dimen/dimen_12"/>
+                        <TextView
+                            android:id="@+id/textView_deadline" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5"
+                            android:text="654" android:textColor="#999999"
+                            android:textSize="@dimen/dimen_12"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_cashback_award"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp" android:layout_weight="1.2"
+                        android:layout_below="@+id/ll_days" android:visibility="gone"
+                        android:layout_marginLeft="@dimen/dimen_28"
+                        android:layout_marginTop="@dimen/dimen_8">
+                        <TextView
+                            android:id="@+id/tv_tag_cashback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_20"
+                            android:layout_marginRight="@dimen/dimen_10"
+                            android:paddingRight="@dimen/dimen_6"
+                            android:paddingLeft="@dimen/dimen_6"
+                            android:background="@drawable/tv_product_fanxian"
+                            android:text="返现1%"
+                            android:gravity="center"
+                            android:visibility="visible"
+                            android:textSize="@dimen/dimen_11"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:id="@+id/list_name_song"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_20"
+                            android:paddingRight="@dimen/dimen_6"
+                            android:paddingLeft="@dimen/dimen_6"
+                            android:background="@drawable/tv_product_jiaxi"
+                            android:text="加息1%"
+                            android:gravity="center"
+                            android:visibility="visible"
+                            android:textSize="@dimen/dimen_11"
+                            android:textColor="@color/white"
+                            android:layout_below="@+id/ll_days"
+                            android:layout_toRightOf="@+id/tv_tag_cashback"/>
+                    </LinearLayout>
+
+                    <View android:id="@+id/view_balance1" android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="0.4" android:visibility="visible"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageview_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

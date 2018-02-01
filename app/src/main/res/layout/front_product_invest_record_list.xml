@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <LinearLayout
+		android:background="@drawable/rl_selector"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <RelativeLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+	            android:id="@+id/front_product_invest_record_list_userrealname"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_centerHorizontal="true"
+	            android:textColor="#999999"
+	            android:textSize="@dimen/dimen_12"
+	            android:text="" />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+	            android:id="@+id/front_product_invest_record_list_investamount"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:textSize="@dimen/dimen_14"
+	            android:text="" />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <RelativeLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true">
+	            <TextView
+		            android:id="@+id/front_product_invest_record_list_investmode"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text=""
+		            android:layout_centerHorizontal="true"
+		            android:textSize="@dimen/dimen_12" />
+	            <TextView
+		            android:id="@+id/front_product_invest_record_list_investtime"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_below="@+id/front_product_invest_record_list_investmode"
+		            android:text=""
+		            android:textColor="#999999"
+		            android:layout_marginTop="@dimen/dimen_2"
+		            android:textSize="@dimen/dimen_12" />
+	        </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0.5"
+        android:background="@color/line"
+        android:orientation="vertical" >
+    </LinearLayout>
+</LinearLayout>

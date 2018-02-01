@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:background="@color/base_end_color_pressed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/navigation_cg"/>
+
+    <ViewStub
+        android:id="@+id/stub_fund_detail0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/aa_viewstub_zjmx0"/>
+
+    <ViewStub
+        android:id="@+id/stub_fund_detail1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/aa_viewstub_zjmx1"/>
+
+</LinearLayout>

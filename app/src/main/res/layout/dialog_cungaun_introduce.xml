@@ -1,0 +1,44 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_320"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_320"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical|right"
+            android:src="@mipmap/cg_introduce"/>
+
+        <LinearLayout
+            android:id="@+id/cg_mail_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/dimen_30">
+            <View
+                android:layout_width="@dimen/dimen_40"
+                android:layout_height="@dimen/dimen_40"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/tv_dialog_introduce"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/dimen_30"
+            android:textColor="@color/text_color_right"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_marginRight="@dimen/dimen_30"
+            android:layout_marginBottom="@dimen/dimen_25"/>
+    </RelativeLayout>
+
+</LinearLayout>

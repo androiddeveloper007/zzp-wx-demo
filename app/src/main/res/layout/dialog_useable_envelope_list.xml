@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/rl_selector"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40" >
+        
+        <TextView
+            android:id="@+id/tv_envelope_dialog"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/text_color_go"
+            android:textSize="@dimen/dimen_13"/>
+        
+		<TextView
+		    android:id="@+id/tv_redwrap_dialog"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:textColor="@color/text_color_go"
+            android:textSize="@dimen/dimen_13"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/tv_redproportion_dialog"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:textColor="@color/text_color_go"
+            android:text=""
+            android:textSize="@dimen/dimen_13" />
+
+    </LinearLayout>
+</LinearLayout>

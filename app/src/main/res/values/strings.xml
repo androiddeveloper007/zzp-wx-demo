@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">五星财富</string>
+    <string name="share_title">夏日活动第二弹—福利连环拍，清爽夏一站</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Xiangqing">XiangQing</string>
+    <string name="Register">Register</string>
+    <string name="Login">Login</string>
+    <string name="Help">Help</string>
+    <string name="PhoneMy">PhoneMy</string>
+    <string name="FanKui">FanKui</string>
+    <string name="Guanyu">Guanyu</string>
+    <string name="Jianjie">Jianjie</string>
+    <string name="Jishu">Jishu</string>
+    <string name="Touzi">Touzi</string>
+    <string name="Lianxi">Lianxi</string>
+    <string name="Jilu">Jilu</string>
+    <string name="Xiangmu">Xiangmu</string>
+    <string name="Zijin">Zijin</string>
+    <string name="Danbao">Danbao</string>
+    <string name="Huankuan">Huankuan</string>
+    <string name="Zhengjian">Zhengjian</string>
+    <string name="Loginmima">Loginmima</string>
+    <string name="Paymima">Paymima</string>
+    <string name="Losepassword">Losepassword</string>
+    <string name="Losepassword2">Losepassword2</string>
+    <string name="Yumoney">Yumoney</string>
+    <string name="Moneymx">Moneymx</string>
+    <string name="Yueaccount">Yueaccount</string>
+    <string name="Tixian">Tixian</string>
+    <string name="TixianRecord">TixianRecord</string>
+    <string name="Chongzhi">Chongzhi</string>
+    <string name="Shiming">Shiming</string>
+    <string name="Mycardadd">Mycardadd</string>
+    <string name="Mycard">Mycard</string>
+    <string name="Addcard">Addcard</string>
+    <string name="Myxiangmu">Myxiangmu</string>
+    <string name="Buyxiangmu">Buyxiangmu</string>
+    <string name="Cardnum">Cardnum</string>
+    <string name="Province">province</string>
+    <string name="City">city</string>
+    <string name="Address">Address</string>
+    <string name="BindRealName">BindRealName</string>
+    <string name="Setting">Setting</string>
+    <string name="PersonalData">PersonalData</string>
+    <string name="MyTyj">MyTyj</string>
+    <string name="Myzjgl">Myzjgl</string>
+    <string name="TyjMainActivity">TyjMainActivity</string>
+    <string name="ShopDetail">ShopDetail</string>
+    <string name="InviteFriends">InviteFriends</string>
+    <string name="InvestRecordTabWidget">InvestRecordTabWidget</string>
+    <string name="TyjTabWidget">TyjTabWidget</string>
+    <string name="Sex">Sex</string>
+    <string name="Add_nickname">Add_nickname</string>
+    <string name="Add_address">Add_address</string>
+    <string name="UserIntegral">UserIntegral</string>
+    <string name="MailList">MailList</string>
+    <string name="MailDetail">MailDetail</string>
+    <string name="MyFriendList">MyFriendList</string>
+     <!-- 下拉刷新，上拉加载更多 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_footer_hint_nomoredata">无更多数据</string>
+
+    
+    <string name="ytz">已投资</string>
+    <string name="wtz">未投资</string>
+    
+    <string name="wsy">未收益</string>
+    <string name="ysy">已收益</string>
+    <string name="app_no_data_tips">暂无记录</string>
+    
+    <string name="wenxintishi">温馨提示</string>
+    
+    <string name="invest_money_hint">请输入投资金额</string>
+    
+    
+    <!-- pattern -->
+    <string name="lockscreen_access_pattern_start">"开始绘制图案"</string>
+    <string name="lockscreen_access_pattern_cleared">"图案已清除"</string>
+    <string name="lockscreen_access_pattern_cell_added">"已添加单元格"</string>
+    <string name="lockscreen_access_pattern_detected">"图案绘制完成"</string>
+    <string name="lockpattern_retry_button_text">"重绘"</string>
+    <string name="lockpattern_continue_button_text">"继续"</string>
+    <string name="lockpattern_confirm_button_text">"确认"</string>
+    <string name="lockpattern_recording_intro_header">"请绘制解锁图案"</string>
+    <string name="lockpattern_settings_help_how_to_record">"如何绘制解锁图案"</string>
+    <string name="lockpattern_recording_incorrect_too_short">"至少连接4个点，请重绘"</string>
+    <string name="lockpattern_pattern_entered_header">"图案已记录"</string>
+    <string name="lockpattern_need_to_confirm">"请再次绘制解锁图案"</string>
+    <string name="lockpattern_need_to_unlock_wrong">"与上次输入不一致，请重绘"</string>
+    <string name="lockpattern_pattern_confirmed_header">"确认保存新解锁图案"</string>
+    <string name="lockpattern_recording_inprogress">"完成后松开手指"</string>
+    <string name="gesture_password_guide_text">你可以创建一个解锁图案，这样他人在借用你的手机时，将无法打开应用。</string>
+    <string name="gesture_password_guide_creat_btn">创建手势密码</string>
+
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    
+    
+    <string name="str_turn_back">取消</string>
+    <string name="str_forward">前进</string>
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+
+    <string name="yanzhengma">验&#160;&#160;证&#160;&#160;码：</string>
+</resources>

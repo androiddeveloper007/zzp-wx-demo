@@ -1,0 +1,206 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_content_view"
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:orientation="vertical" >  
+  
+    <FrameLayout  
+        android:id="@+id/content"  
+        android:layout_width="match_parent"  
+        android:layout_height="0dp"  
+        android:layout_weight="1" 
+        android:background="#f5f5f5">  
+    </FrameLayout>  
+  	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_alignParentTop="true"
+        android:background="#d1d1d1"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <LinearLayout  
+        android:layout_width="match_parent"  
+        android:layout_height="@dimen/dimen_55"
+        android:background="#f5f5f5" 
+        android:weightSum="4"
+        >  
+        <RelativeLayout  
+            android:id="@+id/shouye_layout"  
+            android:layout_width="0dp"  
+            android:layout_height="match_parent"  
+            android:layout_weight="1" >  
+  
+            <LinearLayout  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_centerVertical="true"  
+                android:gravity="center_vertical"
+                android:orientation="vertical" >  
+  
+                <ImageView  
+                    android:id="@+id/shouye_image"  
+                    android:layout_width="@dimen/dimen_24"
+                    android:layout_height="@dimen/dimen_24"
+                    android:layout_gravity="center_horizontal"  
+                    android:src="@drawable/shouye" />  
+  
+                <TextView  
+                    android:id="@+id/shouye_text"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center_horizontal"  
+                    android:layout_marginTop="@dimen/dimen_1"
+                    android:text="首页"  
+                    android:textSize="@dimen/dimen_12"
+                     />  
+            </LinearLayout>  
+        </RelativeLayout>  
+  
+        <RelativeLayout  
+            android:id="@+id/xiangmu_layout"  
+            android:layout_width="0dp"  
+            android:layout_height="match_parent"
+            android:layout_weight="1" >  
+  
+            <LinearLayout  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_centerVertical="true"  
+                android:gravity="center_vertical"
+                android:orientation="vertical" >  
+  
+                <ImageView  
+                    android:id="@+id/xiangmu_image"  
+                    android:layout_width="@dimen/dimen_24"
+                    android:layout_height="@dimen/dimen_24"
+                    android:layout_gravity="center_horizontal"  
+                    android:src="@drawable/xiangmu" />  
+  
+                <TextView  
+                    android:id="@+id/xiangmu_text"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center_horizontal"  
+                    android:text="理财"  
+                    android:textSize="@dimen/dimen_12"
+                    android:layout_marginTop="@dimen/dimen_1"
+                     />  
+            </LinearLayout>  
+        </RelativeLayout>  
+  
+        <RelativeLayout  
+            android:id="@+id/geren_layout"  
+            android:layout_width="0dp"  
+            android:layout_height="match_parent"  
+            android:layout_weight="1" >  
+  
+            <LinearLayout  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_centerVertical="true"  
+                android:orientation="vertical" >  
+  
+                <RelativeLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"  
+                    >
+                <ImageView  
+                    android:id="@+id/geren_image"  
+                    android:layout_width="@dimen/dimen_24"
+                    android:layout_height="@dimen/dimen_24"
+                    android:layout_centerInParent="true"  
+                    android:src="@drawable/geren" />  
+
+  				<!-- <com.flyco.tablayout.widget.MsgView
+  				    xmlns:mv="http://schemas.android.com/apk/res-auto"
+  				    android:id="@+id/msgview"
+  				    android:layout_width="wrap_content"
+  				    android:layout_height="wrap_content"
+  				    android:layout_toRightOf="@id/geren_image"
+  				    android:gravity="center"
+  				    android:textColor="#ffffff"
+  				    android:visibility="gone"
+  				    mv:mv_backgroundColor="#FD481F"
+  				    mv:mv_isRadiusHalfHeight="true"
+  				    mv:mv_strokeColor="#ffffff"
+  				    mv:mv_strokeWidth="@dimen/dimen_1" /> -->
+
+                </RelativeLayout>
+                <TextView  
+                    android:id="@+id/geren_text"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center_horizontal"  
+                    android:text="个人中心" 
+                    android:textSize="@dimen/dimen_12"
+                    android:layout_marginTop="@dimen/dimen_1"
+                    />  
+            </LinearLayout>  
+        </RelativeLayout>  
+         <RelativeLayout  
+            android:id="@+id/partner_layout"  
+            android:layout_width="0dp"  
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_weight="1" >  
+  
+            <LinearLayout  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_centerVertical="true"  
+                android:orientation="vertical" >  
+  
+                <ImageView  
+                    android:id="@+id/shop_image"  
+                    android:layout_width="@dimen/dimen_24"
+                    android:layout_height="@dimen/dimen_24"
+                    android:layout_gravity="center_horizontal"  
+                    android:src="@drawable/shop" />  
+  
+                <TextView  
+                    android:id="@+id/shop_text"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center_horizontal"  
+                    android:text="五星合伙人" 
+                    android:textSize="@dimen/dimen_12"
+                    android:layout_marginTop="@dimen/dimen_1"
+                    />  
+            </LinearLayout>  
+        </RelativeLayout>
+        <RelativeLayout  
+            android:id="@+id/shezhi_layout"  
+            android:layout_width="0dp"  
+            android:layout_height="match_parent"  
+            android:layout_weight="1" >  
+  
+            <LinearLayout  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_centerVertical="true"  
+                android:orientation="vertical" >  
+  
+                <ImageView  
+                    android:id="@+id/shezhi_image"  
+                    android:layout_width="@dimen/dimen_24"
+                    android:layout_height="@dimen/dimen_24"
+                    android:layout_gravity="center_horizontal"  
+                    android:src="@drawable/shezhi" />  
+  
+                <TextView  
+                    android:id="@+id/shezhi_text"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center_horizontal"  
+                    android:text="更多" 
+                    android:textSize="@dimen/dimen_12"
+                    android:layout_marginTop="@dimen/dimen_1"
+                    />  
+            </LinearLayout>  
+        </RelativeLayout>  
+        
+    </LinearLayout>  
+</LinearLayout>  

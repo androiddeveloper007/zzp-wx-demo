@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigation_cg"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_100"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingBottom="@dimen/dimen_5"
+                android:background="@drawable/bg_item"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_recharge_userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/dimen_15"
+                    android:layout_marginLeft="@dimen/dimen_25"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="真实姓名：邓俊杰"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/dimen_15"/>
+
+                <TextView
+                    android:id="@+id/tv_recharge_cg_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_25"
+                    android:layout_weight="1"
+                    android:text="渤海存管账号：000****0000"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/dimen_15"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_15">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:layout_weight="0.35">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="充值金额(元)："
+                            android:textColor="#666666"
+                            android:textSize="@dimen/dimen_16"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.65">
+
+                        <com.cstz.MyWidget.MClearEditText
+                            android:id="@+id/et_recharge_money"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/dimen_10"
+                            android:background="@drawable/edittext_bg_cg"
+                            android:hint="10元起"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:paddingLeft="@dimen/dimen_15"
+                            android:paddingRight="@dimen/dimen_15"
+                            android:textColor="#424242"
+                            android:textColorHint="#cccccc"
+                            android:textSize="@dimen/dimen_16"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_recharge_button_cg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:layout_marginTop="@dimen/dimen_35"
+                android:background="@drawable/button_normal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="充值"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/dimen_18"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_withdraw_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="温馨提示"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="@dimen/dimen_14"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_marginRight="@dimen/dimen_20"
+                    android:background="@color/text_color_2"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_withdraw_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:text="1.单笔充值限额根据各个银行上的充值限额为准。"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="@dimen/dimen_11.5"/>
+                    <TextView
+                        android:id="@+id/tv_recharge_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:layout_marginLeft="@dimen/dimen_5"
+                        android:text="详情 >"
+                        android:textColor="@color/recharge_tip_color_selector"
+                        android:textSize="@dimen/dimen_11.5"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_withdraw_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop= "@dimen/dimen_3"
+                    android:layout_marginBottom="@dimen/dimen_15"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_marginRight="@dimen/dimen_20"
+                    android:text="2.凡是在五星财富平台充值未投资的用户，15天内提现加收本金0.5%充值服务费，五星财富禁止信用卡套现、虚假交易等行为，一经发现将予以处罚，包括但不限于：限制收款、冻结帐户、永久停止服务，并有可能影响相关信用记录。"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="@dimen/dimen_11.5"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title_basedialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="弹出框"
+                android:textColor="@color/black2"
+                android:textSize="@dimen/dimen_15" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@null"
+            android:src="@drawable/caculator_close" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/baseDialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/fr_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+</LinearLayout>

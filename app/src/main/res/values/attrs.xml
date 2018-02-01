@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+     <declare-styleable name="MySlider">
+        <attr name="text" format="reference|string" />
+        <attr name="weightSum" format="string"  />
+        <attr name="selectColor" format="color" />
+        <attr name="defaultColor" format="color" />
+        <attr name="tabTextSize" format="dimension" />
+    </declare-styleable>
+    
+    <declare-styleable name="RoundProgressBar">    
+        <attr name="roundColor" format="color"/>  
+        <attr name="roundProgressColor" format="color"/>  
+        <attr name="roundWidth" format="dimension"></attr>  
+        <attr name="textColor0" format="color" />
+        <attr name="textSize" format="dimension" />   
+        <attr name="max" format="integer"></attr>   
+        <attr name="textIsDisplayable" format="boolean"></attr>  
+        <attr name="style">  
+            <enum name="STROKE" value="0"></enum>  
+            <enum name="FILL" value="1"></enum>  
+        </attr>  
+    </declare-styleable>  
+    
+    <declare-styleable name="keyboard">
+        <attr name="xml" format="reference" />
+        <attr name="randomkeys" format="reference|boolean"></attr>
+    </declare-styleable>
+    
+	<!-- Percent-Layout -->
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent" format="string"/>
+        <attr name="layout_heightPercent" format="string"/>
+
+        <attr name="layout_marginPercent" format="string"/>
+        <attr name="layout_marginLeftPercent" format="string"/>
+        <attr name="layout_marginTopPercent" format="string"/>
+        <attr name="layout_marginRightPercent" format="string"/>
+        <attr name="layout_marginBottomPercent" format="string"/>
+        <attr name="layout_marginStartPercent" format="string"/>
+        <attr name="layout_marginEndPercent" format="string"/>
+
+        <attr name="layout_textSizePercent" format="string"/>
+
+        <attr name="layout_maxWidthPercent" format="string"/>
+        <attr name="layout_maxHeightPercent" format="string"/>
+        <attr name="layout_minWidthPercent" format="string"/>
+        <attr name="layout_minHeightPercent" format="string"/>
+
+        <attr name="layout_paddingPercent" format="string"/>
+        <attr name="layout_paddingTopPercent" format="string"/>
+        <attr name="layout_paddingBottomPercent" format="string"/>
+        <attr name="layout_paddingLeftPercent" format="string"/>
+        <attr name="layout_paddingRightPercent" format="string"/>
+    </declare-styleable>
+    
+    <!-- <declare-styleable name="slideswitch">
+        <attr name="onThemeImage" format="reference" />
+        <attr name="offThemeImage" format="reference" />
+        <attr name="onCircleImage" format="reference" />
+        <attr name="offCircleImage" format="reference" />
+        <attr name="onThemeColor" format="color" />
+        <attr name="offThemeColor" format="color" />
+        <attr name="onCircleColor" format="color" />
+        <attr name="offCircleColor" format="color" />
+        <attr name="slideable" format="boolean" />
+        <attr name="isOpen" format="boolean" />
+        <attr name="shape">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+    </declare-styleable> -->
+    
+    <declare-styleable name="slideswitch">
+        <attr name="themeColor" format="color" />
+        <attr name="isOpen" format="boolean" />
+        <attr name="shape">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+    </declare-styleable>
+    
+    <!-- LockPatternView class attributes -->
+    <declare-styleable name="LockPatternView">
+        <!--
+             Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height"
+        -->
+        <attr name="aspect">
+            <enum name="square" value="0" />
+            <enum name="lockWidth" value="1" />
+            <enum name="lockHeight" value="2" />
+        </attr>
+        
+        <attr name="normal_line_color" format="color|reference" />
+        <attr name="error_line_color" format="color|reference"></attr>
+        <attr name="btnNormal" format="reference" />
+        <attr name="btnTouched" format="reference" />
+        
+        <attr name="circleNormal" format="reference" />
+        <attr name="circleGreen" format="reference" />
+        <attr name="circleRed" format="reference" />
+        
+        <attr name="arrowGreenUp" format="reference" />
+        <attr name="arrowRedUp" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="cityselector">
+        <attr name="isLeft" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FloatingView">
+        <attr name="cx_animation" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+
+    <!--ProgressBarCg-->
+    <declare-styleable name="absProgressBar">
+        <attr name="progress" format="integer" />
+        <attr name="backgroundColor" format="reference|color" />
+        <attr name="textColor" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="progressBar">
+        <attr name="startFillColor" format="reference|color" />
+        <attr name="middleFillColor" format="reference|color" />
+        <attr name="endFillColor" format="reference|color" />
+        <attr name="arrowPointColor" format="reference|color" />
+        <attr name="arrowPointRadius" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="floatTextProgressBar">
+        <attr name="triangleColor" format="reference|color" />
+        <attr name="rectColor" format="reference|color" />
+        <attr name="fillColorProgress" format="reference|color" />
+    </declare-styleable>
+</resources>

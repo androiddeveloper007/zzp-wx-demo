@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 头部选项卡 我的投资 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_selected="true">
+        <shape >
+            <!-- <stroke android:color="@color/blue" android:width="@dimen/dimen_1"/> 描绘视图边框-->
+            <solid android:color="@color/default_bg"/>
+            <corners android:topLeftRadius="0dp" android:bottomLeftRadius="0dp" android:topRightRadius="@dimen/dimen_3" android:bottomRightRadius="@dimen/dimen_3"/>
+        </shape>
+    </item>
+    <item>
+        <shape >
+            <!-- <stroke android:color="@color/blue" android:width="@dimen/dimen_1"/> 描绘视图边框-->
+            <solid android:color="@color/white"/>
+            <corners android:topLeftRadius="0dp" android:bottomLeftRadius="0dp" android:topRightRadius="@dimen/dimen_3" android:bottomRightRadius="@dimen/dimen_3"/>
+        </shape>
+    </item>
+</selector>

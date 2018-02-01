@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item"
+        android:layout_height="@dimen/dimen_150"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5">
+
+        <TextView
+            android:id="@+id/tv_fund_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginLeft="@dimen/dimen_25"
+            android:text="****"
+            android:textColor="#777777"
+            android:textSize="@dimen/dimen_16"/>
+
+        <TextView
+            android:id="@+id/tv_fund_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_fund_title"
+            android:layout_marginLeft="@dimen/dimen_25"
+            android:layout_marginRight="@dimen/dimen_25"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="@dimen/dimen_5"
+            android:maxLines="3"
+            android:text="****：**"
+            android:textColor="#999999"
+            android:textSize="@dimen/dimen_12"/>
+
+        <!--
+            android:layout_below="@+id/tv_fund_text"
+            android:layout_marginTop="@dimen/dimen_15"-->
+        <TextView
+            android:id="@+id/tv_fund_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_25"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:textColor="#aaaaaa"
+            android:text="时间：****"
+            android:textSize="@dimen/dimen_14"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

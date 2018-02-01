@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sliderDefaultColor"
+        android:orientation="vertical">
+
+        <include layout="@layout/navigation_cg"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_220"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_marginLeft="@dimen/dimen_28"
+                android:textSize="@dimen/dimen_19"
+                android:textColor="#6fa0ff"
+                android:text="充值账户余额："/>
+
+            <TextView
+                android:id="@+id/tv_recharge_account_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_90"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/dimen_30"
+                android:textStyle="bold"
+                android:textColor="#6fa0ff"
+                android:text=""/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/text_color_4"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10"
+                android:paddingLeft="@dimen/dimen_20"
+                android:paddingRight="@dimen/dimen_15"
+                android:paddingBottom="@dimen/dimen_25"
+                android:textSize="@dimen/dimen_15"
+                android:textColor="#999999"
+                android:text="使用非渤海对公账户银行卡转账实现充值，支持网银、手机银行、柜台转账（不支持ATM，支付宝，微信），需填写收款人信息如下："
+            />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_change_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:background="@drawable/rl_selector">
+                <TextView
+                    android:id="@+id/tv_recharge_account_consumer_name0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:text="收款方客户"
+                    android:textColor="@color/key_text"
+                    android:textSize="@dimen/dimen_15"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_recharge_account_consumer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_25"
+                    android:layout_toRightOf="@+id/tv_recharge_account_consumer_name0"
+                    android:text=""
+                    android:textColor="@color/text_color_1"
+                    android:textSize="@dimen/dimen_15"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/text_color_4"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_color_4"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_15"
+                android:background="@color/sliderDefaultColor"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_change_pay_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:background="@drawable/rl_selector">
+                <TextView
+                    android:id="@+id/tv_recharge_account_consumer_account0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:text="收款方账户"
+                    android:textColor="@color/key_text"
+                    android:textSize="@dimen/dimen_15"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_recharge_account_consumer_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_25"
+                    android:layout_toRightOf="@+id/tv_recharge_account_consumer_account0"
+                    android:text=""
+                    android:textColor="@color/text_color_1"
+                    android:textSize="@dimen/dimen_15"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/text_color_4"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_color_4"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_15"
+                android:background="@color/sliderDefaultColor"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_find_pay_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginBottom="@dimen/dimen_30"
+                android:background="@drawable/rl_selector">
+                <TextView
+                    android:id="@+id/tv_recharge_account_consumer_bank0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:text="收款方开户行"
+                    android:textColor="@color/key_text"
+                    android:textSize="@dimen/dimen_15"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_color_4"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/text_color_4"/>
+                <TextView
+                    android:id="@+id/tv_recharge_account_consumer_bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text=""
+                    android:textColor="@color/text_color_1"
+                    android:textSize="@dimen/dimen_15"
+                    android:layout_alignBaseline="@+id/tv_recharge_account_consumer_bank0"
+                    android:layout_alignBottom="@+id/tv_recharge_account_consumer_bank0"
+                    android:layout_toRightOf="@+id/tv_recharge_account_consumer_bank0"
+                    android:layout_toEndOf="@+id/tv_recharge_account_consumer_bank0"
+                    android:layout_marginStart="25dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

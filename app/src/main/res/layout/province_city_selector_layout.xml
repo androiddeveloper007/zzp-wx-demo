@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cityselector="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <com.summerxia.dateselector.wheelview.WheelView
+        android:id="@+id/wv_province"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        cityselector:isLeft="true"
+        android:layout_weight="1" />
+
+    <com.summerxia.dateselector.wheelview.WheelView
+        android:id="@+id/wv_city"
+        android:layout_width="0dp"
+        cityselector:isLeft="false"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.1" />
+
+</LinearLayout>

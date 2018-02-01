@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:background="@drawable/rl_selector"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50" >
+        
+        <RadioButton
+            android:id="@+id/id_select_hongbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/radio_ennvelope"
+            android:button="@null"
+            android:checked="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_haobao_margintop"
+            android:focusableInTouchMode="false" />
+        
+		<TextView
+		    android:id="@+id/textview_redwrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/id_select_hongbao"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:textSize="@dimen/dimen_18"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/textview_redproportion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="@dimen/dimen_16" />
+
+    </RelativeLayout>
+</LinearLayout>

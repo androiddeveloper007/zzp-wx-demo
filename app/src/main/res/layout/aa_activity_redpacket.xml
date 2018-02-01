@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slider="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_end_color_pressed"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigation_cg"/>
+
+    <com.cstz.common.view.MySliderCg
+        android:id="@+id/slider_red_packet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60"
+        android:layout_marginTop="@dimen/dimen_12"
+        slider:defaultColor="@color/sliderDefaultColor"
+        slider:selectColor="@color/sliderSelectColor"
+        slider:text="未使用,已使用,已过期"
+        slider:weightSum="3"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_red_packet"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation"/>
+
+</LinearLayout>

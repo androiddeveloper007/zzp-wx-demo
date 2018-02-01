@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:color="@color/text_color_5" ><!-- 按压的颜色 -->
+
+    <shape >
+        <solid android:color="#ffffff" />
+
+        <corners  android:topRightRadius="@dimen/dimen_8"
+                  android:bottomRightRadius="@dimen/dimen_8"/>
+
+    </shape>
+
+</ripple>

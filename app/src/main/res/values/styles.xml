@@ -1,0 +1,272 @@
+<resources>
+
+    <!-- Application theme. -->
+    <!--<style name="AppTheme" parent="AppBaseTheme"></style>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>-->
+
+    <style name="LoginTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/activityAnim</item>
+    </style>
+
+    <style name="list_item_middle1">
+
+        <!-- <item name="android:clickable">true</item> -->
+        <item name="android:background">@drawable/background_view_rounded_middle</item>
+    </style>
+
+    <style name="dialogText" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="dialogImage" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+ 		<!-- 无遮罩层 -->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="popuStyle">
+        <item name="android:windowEnterAnimation">@drawable/popup_anim_in</item>
+        <item name="android:windowExitAnimation">@drawable/popup_anim_out</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="AnimationFade">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <style name="CustomDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Anim_fade" parent="android:Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/fade</item>
+    </style>
+
+    <style name="fade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <!-- 使用style方式定义activity切换动画 -->
+    <style name="activityAnim" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/bottom_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/bottom_out</item>
+    </style>
+<!--         <item name="android:activityCloseEnterAnimation">@anim/bottom_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/bottom_out</item> -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- 自定义Dialog中button的样式 -->
+    <style name="dialog_btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/dimen_36</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_10</item>
+        <item name="android:background">@drawable/btn_selector</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 自定义Dialog在显示时的样式 -->
+    <style name="dialog_tran" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+    <!-- 自定义Dialog在初始化时的样式 -->
+    <style name="dialog_untran" parent="dialog_tran">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!-- 自定义Dialog中标题的样式 -->
+    <style name="DialogWindowTitle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="tip_dialog">
+
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@color/black_more_half</item>
+    </style>
+	<!-- 小浅黑色字体 -->
+	<style name="FontStyleNormalLightBlackSmall"  parent="@android:style/TextAppearance">
+	    <item name="android:textStyle">normal</item>
+	    <item name="android:textColor">@color/home_text_light_black</item>
+	    <item name="android:textSize">12sp</item>
+	</style>
+	
+    <!-- 小中浅黑色字体 -->
+	<style name="FontStyleNormalLightBlackSmallMiddle"  parent="@android:style/TextAppearance">
+	    <item name="android:textStyle">normal</item>
+	    <item name="android:textColor">@color/home_text_light_black</item>
+	    <item name="android:textSize">15sp</item>
+	</style>
+    <!-- 中浅黑色字体 -->
+	<style name="FontStyleNormalLightBlackMiddle"  parent="@android:style/TextAppearance">
+	    <item name="android:textStyle">normal</item>
+	    <item name="android:textColor">@color/home_text_light_black</item>
+	    <item name="android:textSize">16sp</item>
+	</style>
+
+     <!-- 黑色中字体 -->
+    <style name="FontStyleNormalBlackMiddle" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/textcolor_black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- 黑色稍大字体 -->
+    <style name="FontStyleNormalBlackBig" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/textcolor_black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- 黑色大字体 -->
+    <style name="FontStyleNormalBlackBiger" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/textcolor_black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <!-- 小浅灰字体 -->
+    <style name="FontStyleNormalGraySmall" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/textcolor_light_grey</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!-- 中浅灰字体 -->
+    <style name="FontStyleNormalGrayMiddle" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/textcolor_light_grey</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- 稍大浅灰字体 -->
+    <style name="FontStyleNormalGrayBig" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/textcolor_light_grey</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- 绿色小字体 -->
+	<style name="FontStyleNormalGreenSmall"  parent="@android:style/TextAppearance">
+	    <item name="android:textStyle">normal</item>
+	    <item name="android:textColor">@color/textcolor_green</item>
+	    <item name="android:textSize">12sp</item>
+	</style>
+    <!-- 红色小字体 -->
+	<style name="FontStyleNormalRedSmall"  parent="@android:style/TextAppearance">
+	    <item name="android:textStyle">normal</item>
+	    <item name="android:textColor">@color/textcolor_red</item>
+	    <item name="android:textSize">12sp</item>
+	</style>
+    <!-- 红色大字体 -->
+    <style name="FontStyleNormalRedBiger" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/textcolor_red</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <!-- 橘黄色稍大字体 -->
+    <style name="FontStyleNormalYellowBiger" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/not_surance_yellow</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- 蓝色大字体 -->
+    <style name="FontStyleNormalBlueBiger" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/surance_blue</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <!-- 蓝色稍大字体 -->
+    <style name="FontStyleNormalBlueBig" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/surance_blue</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- 蓝色中等字体 -->
+    <style name="FontStyleNormalBlueMiddle" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/surance_blue</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Widget.GifView" parent="@android:style/Widget"></style>
+
+    <!-- SplashTheme -->
+    <style name="SplashTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowBackground">@android:color/white</item>-->
+         <item name="android:windowFullscreen">true</item>
+        <!--<item name="android:windowBackground">@drawable/login_register</item>-->
+        <!-- <item name="android:windowIsTranslucent">true</item> -->
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+    <style name="progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

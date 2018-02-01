@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="three_grid_unit">21.333dp</dimen>
+    <dimen name="one_and_a_half_grid_unit">10.6667dp</dimen>
+    <dimen name="dimen_13">11.56dp</dimen>
+</resources>

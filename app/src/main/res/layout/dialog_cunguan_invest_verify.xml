@@ -1,0 +1,104 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_30"
+        android:background="@drawable/cg_verify_code_bg">
+
+        <TextView
+            android:id="@+id/tv_title_invest_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投标验证码"
+            android:textColor="#666666"
+            android:textSize="@dimen/dimen_16"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_20"/>
+
+        <TextView
+            android:id="@+id/tv_invest_verify"
+            android:layout_below="@+id/tv_title_invest_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入177****9206接收的短信验证码"
+            android:textColor="#666666"
+            android:textSize="@dimen/dimen_14"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_10"/>
+
+        <com.cstz.MyWidget.MClearEditText
+            android:id="@+id/et_invest_verify"
+            android:layout_width="@dimen/dimen_130"
+            android:layout_height="@dimen/dimen_32"
+            android:background="@drawable/edittext_bg_cg"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="#444444"
+            android:textColorHint="#cccccc"
+            android:textCursorDrawable="@drawable/text_cursor"
+            android:textSize="@dimen/dimen_15"
+            android:layout_below="@+id/tv_invest_verify"
+            android:layout_marginLeft="@dimen/dimen_35"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10"/>
+
+        <com.cstz.cunguan.widget.SmsSecondView
+            android:id="@+id/tv_invest_verify_get_code"
+            android:layout_width="@dimen/dimen_90"
+            android:layout_height="@dimen/dimen_32"
+            android:text="获取验证码"
+            android:layout_toRightOf="@+id/et_invest_verify"
+            android:layout_below="@+id/tv_invest_verify"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_14"
+            android:gravity="center"
+            android:background="@mipmap/invest_verify_bg"/>
+
+        <LinearLayout
+            android:id="@+id/layout_button_no"
+            android:layout_width="@dimen/dimen_90"
+            android:layout_height="@dimen/dimen_32"
+            android:background="@drawable/button_normal"
+            android:layout_below="@+id/et_invest_verify"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginLeft="@dimen/dimen_45"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dimen_14"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_button_yes"
+            android:layout_width="@dimen/dimen_90"
+            android:layout_height="@dimen/dimen_32"
+            android:layout_marginRight="@dimen/dimen_45"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_normal"
+            android:layout_below="@+id/et_invest_verify"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dimen_14"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

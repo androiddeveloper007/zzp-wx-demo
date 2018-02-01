@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5" >
+    
+    <ScrollView
+        android:id="@+id/front_product_js_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:layout_marginTop="@dimen/dimen_5">
+            
+            <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:background="#ffffff"
+	            android:weightSum="1" >
+	            <RelativeLayout
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="0dp"
+	    		    android:layout_weight="0.3"
+	    		    android:layout_margin="@dimen/dimen_10" >
+	    		    <ImageView
+	    		        android:id="@+id/imageView1"
+	    		        android:layout_width="@dimen/dimen_22"
+	    		        android:layout_height="@dimen/dimen_22"
+	    		        android:background="@drawable/p_xiangmu" />
+	    		    <TextView
+	    		        android:id="@+id/textView1"
+	    		        android:layout_width="wrap_content"
+	    		        android:layout_height="wrap_content"
+	    		        android:layout_alignParentTop="true"
+	    		        android:layout_toRightOf="@+id/imageView1"
+	    		        android:text="项目概述"
+	    		        android:textSize="@dimen/dimen_16" />
+	    		</RelativeLayout>
+	    		<RelativeLayout 
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="wrap_content">
+		    		<LinearLayout 
+			            android:layout_width="match_parent"
+			            android:layout_height="@dimen/dimen_0.5"
+			            android:background="@color/line">
+			        </LinearLayout>
+		        </RelativeLayout>
+	    		<RelativeLayout
+	    		    android:layout_width="match_parent"
+	    		    android:layout_height="0dp"
+	    		    android:layout_weight="0.7"
+	    		    android:layout_margin="@dimen/dimen_10" >
+	    		    <WebView
+	                   android:id="@+id/webView_xiangmugaishu"
+	                   android:layout_width="wrap_content"
+	                   android:layout_height="wrap_content"/>
+	    		</RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:background="#ffffff"
+	            android:layout_marginTop="@dimen/dimen_5"
+	            android:weightSum="1" >
+	            <RelativeLayout
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="0dp"
+	    		    android:layout_weight="0.3"
+	    		    android:layout_margin="@dimen/dimen_10" >
+	    		    <ImageView
+	    		        android:id="@+id/imageView2"
+	    		        android:layout_width="@dimen/dimen_22"
+	    		        android:layout_height="@dimen/dimen_22"
+	    		        android:background="@drawable/p_xiangmu" />
+	    		    <TextView
+	    		        android:id="@+id/textView2"
+	    		        android:layout_width="wrap_content"
+	    		        android:layout_height="wrap_content"
+	    		        android:layout_alignParentTop="true"
+	    		        android:layout_toRightOf="@+id/imageView2"
+	    		        android:text="还款来源"
+	    		        android:textSize="@dimen/dimen_16" />
+	    		</RelativeLayout>
+	    		<RelativeLayout 
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="wrap_content">
+		    		<LinearLayout 
+			            android:layout_width="match_parent"
+			            android:layout_height="@dimen/dimen_0.5"
+			            android:background="@color/line">
+			        </LinearLayout>
+		        </RelativeLayout>
+	    		<RelativeLayout
+	    		    android:layout_width="match_parent"
+	    		    android:layout_height="0dp"
+	    		    android:layout_weight="0.7"
+	    		    android:layout_margin="@dimen/dimen_10" >
+	    		    <WebView
+	                   android:id="@+id/webView_huankuanlaiyuan"
+	                   android:layout_width="wrap_content"
+	                   android:layout_height="wrap_content"/>
+	    		</RelativeLayout>
+            </LinearLayout>
+			<LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:background="#ffffff"
+	            android:layout_marginTop="@dimen/dimen_5"
+	            android:weightSum="1" >
+	            <RelativeLayout
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="0dp"
+	    		    android:layout_weight="0.3"
+	    		    android:layout_margin="@dimen/dimen_10" >
+	    		    <ImageView
+	    		        android:id="@+id/imageView3"
+	    		        android:layout_width="@dimen/dimen_22"
+	    		        android:layout_height="@dimen/dimen_22"
+	    		        android:background="@drawable/p_xiangmu" />
+	    		    <TextView
+	    		        android:id="@+id/textView3"
+	    		        android:layout_width="wrap_content"
+	    		        android:layout_height="wrap_content"
+	    		        android:layout_alignParentTop="true"
+	    		        android:layout_toRightOf="@+id/imageView3"
+	    		        android:text="安全保障"
+	    		        android:textSize="@dimen/dimen_16" />
+	    		</RelativeLayout>
+	    		<RelativeLayout 
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="wrap_content">
+		    		<LinearLayout 
+			            android:layout_width="match_parent"
+			            android:layout_height="@dimen/dimen_0.5"
+			            android:background="@color/line">
+			        </LinearLayout>
+		        </RelativeLayout>
+	    		<RelativeLayout
+	    		    android:layout_width="match_parent"
+	    		    android:layout_height="0dp"
+	    		    android:layout_weight="0.7"
+	    		    android:layout_margin="@dimen/dimen_10" >
+	    		    <WebView
+	                   android:id="@+id/webView_anquanbaozhang"
+	                   android:layout_width="wrap_content"
+	                   android:layout_height="wrap_content"/>
+	    		</RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:background="#ffffff"
+	            android:layout_marginTop="@dimen/dimen_5"
+	            android:weightSum="1" >
+	            <RelativeLayout
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="0dp"
+	    		    android:layout_weight="0.3"
+	    		    android:layout_margin="@dimen/dimen_10" >
+	    		    <ImageView
+	    		        android:id="@+id/imageView4"
+	    		        android:layout_width="@dimen/dimen_22"
+	    		        android:layout_height="@dimen/dimen_22"
+	    		        android:background="@drawable/p_xiangmu" />
+	    		    <TextView
+	    		        android:id="@+id/textView4"
+	    		        android:layout_width="wrap_content"
+	    		        android:layout_height="wrap_content"
+	    		        android:layout_alignParentTop="true"
+	    		        android:layout_toRightOf="@+id/imageView4"
+	    		        android:text="备查文件"
+	    		        android:textSize="@dimen/dimen_16" />
+	    		</RelativeLayout>
+	    		<RelativeLayout 
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="wrap_content">
+		    		<LinearLayout 
+			            android:layout_width="match_parent"
+			            android:layout_height="@dimen/dimen_0.5"
+			            android:background="@color/line">
+			        </LinearLayout>
+		        </RelativeLayout>
+	    		<RelativeLayout
+	    		    android:layout_width="match_parent"
+	    		    android:layout_height="0dp"
+	    		    android:layout_weight="0.7"
+	    		    android:layout_margin="@dimen/dimen_10" >
+	    		    <com.cstz.MyWidget.MyGridView 
+				        android:id="@+id/gridView_beichawenjian"
+				        android:layout_width="match_parent"
+				        android:layout_height="match_parent"
+				        android:numColumns="3"
+				        android:padding="@dimen/dimen_10"
+				        android:layout_centerHorizontal="true"
+				        android:layout_centerVertical="true" />
+	    		</RelativeLayout>
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

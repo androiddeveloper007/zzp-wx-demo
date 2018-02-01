@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_135"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <RelativeLayout
+                android:id="@+id/layout_lianxikefu"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:clickable="false"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="五星财富-中国互联网资产证券化品牌企业"
+                    android:textColor="@color/item_msg"
+                	android:clickable="false"
+                    android:textSize="@dimen/dimen_12" />
+            </RelativeLayout>
+
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/dimen_0.5"
+	                android:background="@color/line"
+	                android:orientation="vertical" >
+	            </LinearLayout>
+			</RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_out"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" 
+                android:background="@drawable/button_exit_style"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="安全退出"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/dimen_15" />
+            </RelativeLayout>
+			<RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/dimen_3"
+	                android:background="@color/line"
+	                android:orientation="vertical" >
+	            </LinearLayout>
+			</RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_quxiao"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_exit_style"
+                 >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="取消"
+                    android:textSize="@dimen/dimen_15" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

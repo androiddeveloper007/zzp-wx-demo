@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_message_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_115"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:paddingBottom="@dimen/dimen_8"
+        android:background="@drawable/message_item_selector">
+
+        <TextView
+            android:id="@+id/tv_invite_user"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dimen_25"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="bottom"
+            android:text="123"
+            android:textColor="@color/text_color_7"
+            android:textSize="@dimen/dimen_15"/>
+
+        <TextView
+            android:id="@+id/tv_register_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_invite_user"
+            android:layout_marginLeft="@dimen/dimen_25"
+            android:layout_marginRight="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:lineSpacingExtra="1dp"
+            android:text="234"
+            android:textColor="@color/text_color_7"
+            android:textSize="@dimen/dimen_11"/>
+
+        <TextView
+            android:id="@+id/tv_invite0"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dimen_25"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color_2"
+            android:text="345"
+            android:textSize="@dimen/dimen_10"/>
+
+        <!--<ImageView
+            android:id="@+id/imageview_mailStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_point_pre"
+            android:contentDescription="@null"
+            android:layout_marginLeft="@dimen/dimen_2"
+            android:visibility="gone"/>-->
+    </RelativeLayout>
+
+</LinearLayout>

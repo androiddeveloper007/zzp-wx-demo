@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigation_cg"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_15"
+        android:background="@color/divider_color"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:src="@mipmap/bind_real_name"/>
+
+    <TextView
+        android:id="@+id/tv_bind_id_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:gravity="center"
+        android:text="姓名："
+        android:textColor="@color/text_color_7"
+        android:textSize="@dimen/dimen_16"/>
+
+    <TextView
+        android:id="@+id/tv_bind_id_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:gravity="center"
+        android:text="身份证："
+        android:textColor="@color/text_color_7"
+        android:textSize="@dimen/dimen_14"/>
+
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:slider="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_end_color_pressed"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_12"/>
+
+    <com.lzy.widget.HeaderViewPager
+        android:id="@+id/header_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:hvp_topOffset="0dp">
+
+        <LinearLayout
+            android:id="@+id/ll_title_fund_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="8dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_title_fund_detail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_190"
+                android:background="@color/navigation_cg">
+
+                <TextView
+                    android:id="@+id/tv_fund_detail0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30"
+                    android:layout_marginTop="@dimen/dimen_20"
+                    android:text="总资产 (元)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_18"/>
+
+                <TextView
+                    android:id="@+id/tv_fund_detail1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_fund_detail0"
+                    android:layout_marginLeft="@dimen/dimen_30"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="0.00"
+                    android:textColor="@color/shouyi_text"
+                    android:textSize="@dimen/dimen_32"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_fund_detail_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_fund_detail1"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_fund_detail2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_30"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:layout_weight="1"
+                        android:text="可用余额 (元)"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_16"/>
+
+                    <TextView
+                        android:id="@+id/tv_fund_detail3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:layout_weight="1"
+                        android:text="冻结金额 (元)"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_16"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_fund_detail_0"
+                    android:layout_marginBottom="@dimen/dimen_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_fund_detail4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_30"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:layout_weight="1"
+                        android:text="0.00"
+                        android:textColor="@color/shouyi_text"
+                        android:textSize="@dimen/dimen_18"/>
+
+                    <TextView
+                        android:id="@+id/tv_fund_detail5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:layout_weight="1"
+                        android:text="0.00"
+                        android:textColor="@color/shouyi_text"
+                        android:textSize="@dimen/dimen_18"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--<com.cstz.common.view.MySliderCg
+            android:id="@+id/slider_zjmx"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60"
+            slider:defaultColor="@color/sliderDefaultColor"
+            slider:selectColor="@color/sliderSelectColor"
+            slider:text="全部,投资,充值,提现,回款"
+            slider:weightSum="5"/>-->
+        <!--@drawable/background_tabs-->
+        <library.widget.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55"
+            android:background="@color/white"
+            app:pstsIndicatorColor="@color/sliderSelectColor"
+            app:pstsIndicatorHeight="@dimen/dimen_4"
+            app:pstsUnderlineHeight="@dimen/dimen_3"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager_zjmx"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation"/>
+
+    </com.lzy.widget.HeaderViewPager>
+
+</LinearLayout>

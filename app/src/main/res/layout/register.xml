@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mykeyboard="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/root_view"
+    android:orientation="vertical" >
+    <include layout="@layout/navigation" />
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+		<RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dimen_120"
+	        android:layout_marginTop="@dimen/dimen_50" >
+	        <ImageView 
+	            android:layout_width="@dimen/dimen_85"
+	            android:layout_height="@dimen/dimen_102"
+	            android:background="@drawable/logo_login"
+	            android:layout_centerHorizontal="true"/>
+	    </RelativeLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dimen_200"
+	        android:layout_marginTop="0dp"
+	        android:background="#ffffff"
+	        android:orientation="vertical"
+	        android:weightSum="4" >
+	
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:paddingLeft="@dimen/dimen_30"
+	            android:paddingRight="@dimen/dimen_30">
+	
+	            <EditText
+	                android:id="@+id/register_phone"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:textCursorDrawable="@drawable/text_cursor"
+	                android:layout_centerVertical="true"
+	                android:background="@null"
+	                android:singleLine="true"
+	                android:textColorHint="#cccccc"
+	                android:ems="10"
+	                android:paddingLeft="@dimen/dimen_5"
+	                android:inputType="number"
+	                android:hint="手机号码"
+	                android:textSize="@dimen/dimen_15" />
+	
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/dimen_0.5"
+	                android:layout_alignParentBottom="true"
+	                android:background="@color/line">
+	            </LinearLayout>
+	        </RelativeLayout>
+	
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:paddingLeft="@dimen/dimen_30"
+	            android:paddingRight="@dimen/dimen_30" >
+	            <LinearLayout 
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:orientation="horizontal"
+	                android:weightSum="1">
+	                 <RelativeLayout
+			            android:layout_width="0dp"
+			            android:layout_height="match_parent"
+			            android:layout_weight="0.6">
+	                     <EditText
+			                android:id="@+id/register_smsCode"
+			                android:layout_width="match_parent"
+			                android:layout_height="match_parent"
+							android:layout_centerVertical="true"
+							android:textCursorDrawable="@drawable/text_cursor"
+			                android:background="@null"
+			                android:ems="10"
+			                android:textColorHint="#cccccc"
+			                android:singleLine="true"
+			                android:phoneNumber="true"
+			                android:hint="短信验证码"
+			                android:paddingLeft="@dimen/dimen_5"
+			                android:textSize="@dimen/dimen_15" />
+	                 </RelativeLayout>
+	                 <RelativeLayout 
+	                     android:layout_width="wrap_content"
+	                     android:layout_height="wrap_content">
+	                     <LinearLayout
+			                android:layout_width="0.5dip"
+			                android:layout_height="match_parent"
+			                android:layout_marginTop="@dimen/dimen_5"
+			                android:layout_marginBottom="@dimen/dimen_5"
+			                android:background="@color/line">
+		           		 </LinearLayout>
+	                 </RelativeLayout>	                 
+	                 <com.cstz.common.view.MySmsStyleSwitch
+				        android:id="@+id/myswitcher"
+				        android:layout_width="0dp"
+				        android:layout_height="match_parent"
+				        android:layout_weight="0.4"/>
+	            </LinearLayout>	            			   	           	
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/dimen_0.5"
+	                android:layout_alignParentBottom="true"
+	                android:background="@color/line"
+	                android:orientation="vertical" >
+	            </LinearLayout>
+	        </RelativeLayout>
+	
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:paddingLeft="@dimen/dimen_30"
+	            android:paddingRight="@dimen/dimen_30" >
+	
+			        <EditText
+		                android:id="@+id/register_pwd"
+				        android:layout_width="match_parent"
+				        android:layout_height="match_parent"
+				        android:background="@null"
+				        android:textCursorDrawable="@drawable/text_cursor"
+				        android:hint="密码（字母加数字至少8位）
+				        "
+				        android:inputType="textPassword"
+				        android:textSize="@dimen/dimen_15"
+				        android:singleLine="true"
+				        android:paddingLeft="@dimen/dimen_5"
+				        android:textColorHint="#cccccc"/>
+	            
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/dimen_0.5"
+	                android:layout_alignParentBottom="true"
+	                android:background="@color/line" >
+	            </LinearLayout>
+	        </RelativeLayout>
+	
+	
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:paddingLeft="@dimen/dimen_30"
+	            android:paddingRight="@dimen/dimen_30" >
+	
+	            <EditText
+	                android:id="@+id/register_refferee"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_centerVertical="true"
+	                android:textCursorDrawable="@drawable/text_cursor"
+	                android:background="@null"
+	                android:singleLine="true"
+	                android:ems="10"
+	                android:textColorHint="#cccccc"
+	                android:hint="推荐人手机号码 (选填)"
+	                android:phoneNumber="true"
+	                android:paddingLeft="@dimen/dimen_5"
+	                android:textSize="@dimen/dimen_15" />
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/dimen_0.5"
+	                android:layout_alignParentBottom="true"
+	                android:background="@color/line"
+	                android:orientation="vertical" >
+	            </LinearLayout>
+	        </RelativeLayout>
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginTop="@dimen/dimen_20" >
+	
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="@dimen/dimen_80" >
+	
+	            <LinearLayout
+	                android:id="@+id/register_button"
+	                android:background="@drawable/button_normal"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:layout_marginBottom="@dimen/dimen_22"
+	                android:layout_marginLeft="@dimen/dimen_30"
+	                android:layout_marginRight="@dimen/dimen_30"
+	                android:layout_marginTop="@dimen/dimen_12"
+	                android:gravity="center"
+	                android:orientation="vertical" >
+	
+	                <TextView
+	                    android:id="@+id/textView7"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="免费注册"
+	                    android:textColor="#FFFFFF"
+	                    android:textSize="@dimen/dimen_18" />
+	            </LinearLayout>
+	        </RelativeLayout>
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+				android:gravity="center"
+		        android:layout_marginTop="0dp" >
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="注册即视为已同意"
+					android:textSize="@dimen/dimen_14"
+	                android:textColor="#666666"/>
+				<TextView
+					android:id="@+id/tv_register_agreement"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="《五星财富用户服务协议》"
+					android:textSize="@dimen/dimen_14"
+					android:textColor="@color/navigation_cg"/>
+	        </LinearLayout>
+		
+	    </LinearLayout>
+	 </LinearLayout>
+   </ScrollView>	
+</LinearLayout>

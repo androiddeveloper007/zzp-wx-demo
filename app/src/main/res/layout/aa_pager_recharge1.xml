@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="第一步："
+            android:textColor="@color/navigation_cg"
+            android:textSize="@dimen/dimen_18"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="使用在渤海银行存管账户绑定的银行卡转账实现充值，支持网银、手机银行、柜台转账（不支持ATM，支付宝，微信），需填写收款人信息如下："
+            android:textColor="@color/text_color_2"
+            android:textSize="@dimen/dimen_14.5"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_90"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="#ffffff">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentTop="true"
+                android:background="#88888888"/>
+
+            <TextView
+                android:id="@+id/tv_remittee0"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_30"
+                android:gravity="center"
+                android:text="收款方客户"
+                android:textColor="@color/text_color_7"
+                android:textSize="@dimen/dimen_13"/>
+
+            <TextView
+                android:id="@+id/tv_recharge_userName_big"
+                android:layout_width="@dimen/dimen_220"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_toRightOf="@+id/tv_remittee0"
+                android:gravity="center"
+                android:text="**"
+                android:textColor="@color/text_color_7"
+                android:textSize="@dimen/dimen_13"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tv_remittee0"
+                android:background="#88888888"/>
+
+            <TextView
+                android:id="@+id/tv_remittee_account0"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_below="@+id/tv_remittee0"
+                android:gravity="center"
+                android:text="收款方账户"
+                android:textColor="@color/text_color_7"
+                android:textSize="@dimen/dimen_13"/>
+
+            <TextView
+                android:id="@+id/tv_recharge_cg_account_big"
+                android:layout_width="@dimen/dimen_220"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_below="@+id/tv_remittee0"
+                android:layout_toRightOf="@+id/tv_remittee_account0"
+                android:gravity="center"
+                android:text="****"
+                android:textColor="@color/text_color_7"
+                android:textSize="@dimen/dimen_13"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tv_remittee_account0"
+                android:background="#88888888"/>
+
+            <TextView
+                android:id="@+id/tv_remittee_bank0"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_below="@+id/tv_remittee_account0"
+                android:gravity="center"
+                android:text="收款方开户行"
+                android:textColor="@color/text_color_7"
+                android:textSize="@dimen/dimen_13"/>
+
+            <TextView
+                android:id="@+id/tv_remittee_bank1"
+                android:layout_width="@dimen/dimen_220"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_below="@+id/tv_remittee_account0"
+                android:layout_toRightOf="@+id/tv_remittee_bank0"
+                android:gravity="center"
+                android:text="渤海银行深圳分行"
+                android:textColor="@color/text_color_7"
+                android:textSize="@dimen/dimen_13"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="#88888888"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_remittee0"
+                android:background="#88888888"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#88888888"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#88888888"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:text="第二步："
+            android:textColor="@color/navigation_cg"
+            android:textSize="@dimen/dimen_18"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="完成充值后点击下面同步数据按钮进行同步。"
+            android:textColor="@color/text_color_2"
+            android:textSize="@dimen/dimen_14.5"/>
+
+        <LinearLayout
+            android:id="@+id/ll_refresh_recharge_big"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginLeft="@dimen/dimen_55"
+            android:layout_marginRight="@dimen/dimen_55"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:background="@drawable/button_normal"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="同步数据"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dimen_18"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_recharge_balance_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_16"
+            android:textColor="@color/text_color_2"
+            android:layout_gravity="center_horizontal"
+            android:text="您的账户余额"
+            android:layout_marginTop="@dimen/dimen_10"
+        />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_withdraw_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:text="温馨提示："
+                android:textColor="@color/text_color_7"
+                android:textSize="@dimen/dimen_14"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:background="@color/text_color_2"/>
+
+            <TextView
+                android:id="@+id/tv_withdraw_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="1.需要使用已绑定银行存管的银行卡，两小时内到帐时间视银行处理进度而定。(建议在工作日上午8:30至下午17:30处理)。"
+                android:textColor="@color/text_color_2"
+                android:textSize="@dimen/dimen_11.5"/>
+
+            <TextView
+                android:id="@+id/tv_withdraw_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_3"
+                android:layout_marginBottom="@dimen/dimen_15"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:text="2.凡是在五星财富平台充值未投资的用户，15天内提现加收本金0.5%充值服务费，五星财富禁止信用卡套现、虚假交易等行为，一经发现将予以处罚，包括但不限于：限制收款、冻结帐户、永久停止服务，并有可能影响相关信用记录。"
+                android:textColor="@color/text_color_2"
+                android:textSize="@dimen/dimen_11.5"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

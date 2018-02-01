@@ -1,0 +1,44 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ll_radius_event_notice">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ll_radius_event_notice_0"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_40"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="活动通知"
+                android:textColor="@color/text_color_1"
+                android:textSize="@dimen/dimen_16" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@mipmap/event_notice"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close_event_notice"
+        android:layout_width="@dimen/dimen_35"
+        android:layout_height="@dimen/dimen_35"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:src="@mipmap/event_notice_close"/>
+</LinearLayout>

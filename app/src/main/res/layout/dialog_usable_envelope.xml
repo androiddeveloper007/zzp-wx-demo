@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_200"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/dimen_15"
+                android:textColor="@color/text_color_go"
+                android:gravity="center"
+                android:text="红包"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/dimen_15"
+                android:textColor="@color/text_color_go"
+                android:text="项目周期"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/dimen_15"
+                android:textColor="@color/text_color_go"
+                android:gravity="center"
+                android:text="使用条件"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:background="@color/text_color_5"/>
+
+        <com.cstz.ui.xlistview.XListView
+            android:id="@+id/lv_dialog_usable_envelope"
+            android:layout_width="match_parent"
+            android:divider="@drawable/dialog_usableenvelope_lv_divider"
+            android:dividerHeight="1px"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginBottom="@dimen/dimen_15"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10" >
+
+        <Button
+            android:id="@+id/btn_pattern_warn"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/dimen_36"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:layout_weight="1"
+            android:background="@drawable/button_normal_pattern_warn"
+            android:text="确    定"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_16" />
+    </LinearLayout>
+
+</LinearLayout>

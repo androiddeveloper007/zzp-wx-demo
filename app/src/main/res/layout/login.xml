@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!-- xmlns:mykeyboard="http://schemas.android.com/apk/res/com.cstz.cstz_android" -->
+
+    <include layout="@layout/navigation" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_120"
+                android:layout_marginTop="@dimen/dimen_50" >
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_85"
+                    android:layout_height="@dimen/dimen_102"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/logo_login" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_100"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:weightSum="2" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/dimen_30"
+                    android:paddingRight="@dimen/dimen_30" >
+                    <!--com.cstz.MyWidget.MClear-->
+                    <com.cstz.MyWidget.MClearEditText
+                        android:id="@+id/editText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="@dimen/dimen_4"
+                        android:focusable="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="手机号码"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/dimen_5"
+                        android:paddingRight="@dimen/dimen_30"
+                        android:layout_marginRight="@dimen/dimen_38"
+                        android:singleLine="true"
+                        android:textColorHint="#cccccc"
+                        android:textCursorDrawable="@drawable/text_cursor"
+                        android:textSize="@dimen/dimen_15"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_0.5"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/line" >
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/dimen_30"
+                    android:paddingRight="@dimen/dimen_30" >
+                    <!--com.cstz.MyWidget.MClear-->
+                    <com.cstz.MyWidget.MClearEditText
+                        android:id="@+id/editText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dimen_5"
+                        android:layout_marginRight="@dimen/dimen_38"
+                        android:paddingRight="@dimen/dimen_30"
+                        android:background="@null"
+                        android:hint="登录密码"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColorHint="#cccccc"
+                        android:textSize="@dimen/dimen_15"
+                        android:textCursorDrawable="@drawable/text_cursor" />
+
+                    <!--<ImageView android:id="@+id/iv_pwd_visibility"
+                               android:layout_width="@dimen/dimen_25"
+                               android:layout_height="@dimen/dimen_25"
+                               android:src="@drawable/pwd_invisible"
+                               android:layout_alignParentRight="true"
+                               android:layout_centerVertical="true" />-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_0.5"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/line" >
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_70"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:id="@+id/Layout_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="@dimen/dimen_12"
+                        android:layout_marginLeft="@dimen/dimen_30"
+                        android:layout_marginRight="@dimen/dimen_30"
+                        android:layout_marginTop="@dimen/dimen_12"
+                        android:background="@drawable/button_normal"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="登录"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/dimen_18" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_20"
+                    android:paddingLeft="@dimen/dimen_30"
+                    android:paddingRight="@dimen/dimen_30" >
+
+                    <TextView
+                        android:id="@+id/tv_login_lose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text="忘记密码？"
+                        android:textColor="#419fdf"
+                        android:textSize="@dimen/dimen_14" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        
+    </ScrollView>
+</LinearLayout>

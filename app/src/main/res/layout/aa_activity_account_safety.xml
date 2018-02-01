@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shouyi_text1"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigation_cg"/>
+
+    <!--<ImageView
+        android:id="@+id/iv_safety"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_220"/>-->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/iv_safety"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_220"
+        android:layout_marginTop="@dimen/dimen_8"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_change_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:background="@drawable/rl_selector">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:text="修改登录密码"
+                android:textColor="@color/key_text"
+                android:textSize="@dimen/dimen_14"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:background="@drawable/next"
+                android:visibility="visible"
+            />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_17"
+                android:background="@color/line">
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_change_pay_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:background="@drawable/rl_selector">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:text="修改存管密码"
+                android:textColor="@color/key_text"
+                android:textSize="@dimen/dimen_14"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:background="@drawable/next"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_17"
+                android:background="@color/line">
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_find_pay_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:background="@drawable/rl_selector">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:text="找回存管密码"
+                android:textColor="@color/key_text"
+                android:textSize="@dimen/dimen_14"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:background="@drawable/next"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_17"
+                android:background="@color/line">
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_change_pattern"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:background="@drawable/rl_selector">
+            <TextView
+                android:id="@+id/tv_account_safety_pattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:text="修改手势密码"
+                android:textColor="@color/key_text"
+                android:textSize="@dimen/dimen_14"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv_safety_pattern_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_toLeftOf="@+id/imageView6"
+                android:visibility="gone"
+                android:textColor="#999"
+                android:textSize="@dimen/dimen_13.5"/>
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:background="@drawable/next"/>
+
+            <LinearLayout
+                android:id="@+id/line_create_pattern"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_17"
+                android:visibility="gone"
+                android:background="@color/line"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_forget_pay_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:visibility="gone"
+            android:background="@drawable/rl_selector">
+            <TextView
+                android:id="@+id/tv_account_pay_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:text="修改还款密码"
+                android:textColor="@color/key_text"
+                android:textSize="@dimen/dimen_14"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:background="@drawable/next"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_17"
+                android:visibility="gone"
+                android:background="@color/line"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_fingerprint"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:visibility="gone"
+            android:background="@drawable/rl_selector">
+            <TextView
+                android:id="@+id/tv_fingerprint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:text="指纹密码"
+                android:textColor="@color/key_text"
+                android:textSize="@dimen/dimen_14"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:background="@drawable/next"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_17"
+                android:background="@color/line"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

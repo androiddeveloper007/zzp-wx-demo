@@ -1,0 +1,127 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<cn.bingoogolapple.bgabanner.BGABanner
+		android:id="@+id/index_banner"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dimen_200"
+		custom:banner_pageChangeDuration="1000"
+		custom:banner_pointAutoPlayInterval="5000"
+		custom:banner_pointContainerBackground="@android:color/transparent"
+		custom:banner_transitionEffect="depth"/>
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dimen_60"
+		android:background="#ffffff"
+		android:visibility="visible">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			android:weightSum="2">
+
+			<RelativeLayout
+				android:id="@+id/relativelayout_xinshou"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_marginRight="@dimen/dimen_0.5"
+				android:layout_weight="1"
+				android:background="@drawable/rl_selector"
+				android:clickable="true"
+				android:paddingTop="@dimen/dimen_3">
+
+				<ImageView
+					android:id="@+id/imageView1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/dimen_5"
+					android:background="@drawable/index_nav"/>
+
+				<TextView
+					android:id="@+id/textView5"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentTop="true"
+					android:layout_marginLeft="@dimen/dimen_5"
+					android:layout_marginTop="@dimen/dimen_5"
+					android:layout_toRightOf="@+id/imageView1"
+					android:text="网站公告"
+					android:textSize="@dimen/dimen_18"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignBottom="@+id/imageView1"
+					android:layout_alignLeft="@+id/textView5"
+					android:layout_marginBottom="@dimen/dimen_5"
+					android:text="项目公告"
+					android:textColor="#999999"
+					android:textSize="@dimen/dimen_12"/>
+
+			</RelativeLayout>
+
+			<LinearLayout
+				android:layout_width="@dimen/dimen_1"
+				android:layout_height="match_parent"
+				android:layout_marginBottom="@dimen/dimen_10"
+				android:layout_marginTop="@dimen/dimen_10"
+				android:background="#eaeaea">
+			</LinearLayout>
+
+			<RelativeLayout
+				android:id="@+id/relativelayout_yhhd"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_marginLeft="@dimen/dimen_0.5"
+				android:layout_weight="1"
+				android:background="@drawable/rl_selector"
+				android:clickable="true"
+				android:paddingTop="@dimen/dimen_3">
+
+				<ImageView
+					android:id="@+id/imageView2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/dimen_5"
+					android:background="@drawable/index_nav1"/>
+
+				<TextView
+					android:id="@+id/textView6"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentTop="true"
+					android:layout_marginLeft="@dimen/dimen_5"
+					android:layout_marginTop="@dimen/dimen_5"
+					android:layout_toRightOf="@+id/imageView2"
+					android:text="五星优势"
+					android:textSize="@dimen/dimen_18"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignBottom="@+id/imageView2"
+					android:layout_alignLeft="@+id/textView6"
+					android:layout_marginBottom="@dimen/dimen_5"
+					android:text="模式创新、雄厚背景"
+					android:textColor="#999999"
+					android:textSize="@dimen/dimen_12"/>
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="3px"
+			android:layout_alignParentBottom="true"
+			android:background="#f5f5f5"/>
+
+	</RelativeLayout>
+
+</LinearLayout>

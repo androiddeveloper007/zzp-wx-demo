@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slider="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigation_cg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/yaoqing_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_reward_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="累计邀请收益（元）"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_16"/>
+
+            <TextView
+                android:id="@+id/tv_reward_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_25"
+                android:text="0.00"
+                android:textColor="@color/shouyi_text"
+                android:textSize="@dimen/dimen_30"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/dimen_35"
+                android:background="@color/line_color"/>
+        </LinearLayout>
+
+        <com.cstz.common.view.MySliderCg
+            android:id="@+id/slider_invite"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            slider:defaultColor="@color/sliderDefaultColor"
+            slider:selectColor="@color/sliderSelectColor"
+            slider:text="我的邀请,收益记录"
+            slider:weightSum="2"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager_invite"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_height="@dimen/dimen_42" android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_5">
+
+            <LinearLayout
+                android:id="@+id/layout_button_invite"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_normal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邀请好友"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/dimen_18"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cstz.cunguan.fragment.ViewPagerItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fillViewport="true">
+
+    <library.widget.xlistview.XListView
+        android:id="@+id/lv_funddetail_tab0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@null"/>
+
+</com.cstz.cunguan.fragment.ViewPagerItemView>

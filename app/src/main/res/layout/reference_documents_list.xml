@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_5" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="@dimen/dimen_95"
+            android:layout_height="@dimen/dimen_140"
+            android:background="@drawable/image_border_style"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView_wenjiain_image"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="@dimen/dimen_135"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerInside" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_wenjian_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/dimen_12"
+            android:text="" />
+		
+    </RelativeLayout>
+
+</RelativeLayout>

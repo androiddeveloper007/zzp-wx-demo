@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:background="@drawable/bg_item"
+            android:layout_height="@dimen/dimen_85"
+            android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_10">
+
+            <TextView
+                android:id="@+id/tv_invite_user0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dimen_25"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="邀请投资收益"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/dimen_14"/>
+
+            <TextView
+                android:id="@+id/tv_invite_user1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_toRightOf="@+id/tv_invite_user0"
+                android:text="13829200011"
+                android:textColor="#999999"
+                android:textSize="@dimen/dimen_14"/>
+
+            <TextView
+                android:id="@+id/tv_register_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_invite_user0"
+                android:layout_marginLeft="@dimen/dimen_25"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/dimen_3"
+                android:maxLines="2"
+                android:text="2017-06-20 18：00"
+                android:textColor="#999999"
+                android:textSize="@dimen/dimen_12"/>
+
+            <Button
+                android:id="@+id/tv_invite_earning"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_27"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:background="@drawable/btn_radius_yes"
+                android:text="+6.88" android:textSize="@dimen/dimen_12"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+</LinearLayout>

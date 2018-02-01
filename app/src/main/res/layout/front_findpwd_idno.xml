@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mykeyboard="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/navigation" />
+	<ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+
+			<RelativeLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/dimen_20"
+		        android:layout_marginTop="@dimen/dimen_15">
+		        <TextView
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_centerHorizontal="true"
+		           android:layout_centerVertical="true"
+		           android:text="为了保障您的财产安全,请输入已登记的身份证最后6位"
+		           android:textColor="#999999"
+		           android:textSize="@dimen/dimen_11" />
+		    </RelativeLayout>
+		
+		    <RelativeLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="@dimen/dimen_50"
+		        android:layout_marginTop="@dimen/dimen_15"
+		        android:background="@drawable/edittext_style"
+		        android:layout_marginLeft="@dimen/dimen_15"
+		        android:layout_marginRight="@dimen/dimen_15">
+		        <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_marginTop="0dp"
+			        android:background="#ffffff"
+			        android:orientation="horizontal"
+			        android:weightSum="1" >
+				    <RelativeLayout 
+				        android:layout_width="0dp"
+				        android:layout_height="match_parent"
+				        android:layout_weight="0.3"
+				        android:layout_marginLeft="@dimen/dimen_10">
+				        <TextView 
+				            android:layout_height="wrap_content"
+				            android:layout_width="wrap_content"
+				            android:text="身份证"
+				            android:textColor="#424242"
+				            android:textSize="@dimen/dimen_15"
+				            android:layout_centerVertical="true"/>
+				    </RelativeLayout>
+				    <RelativeLayout 
+				        android:layout_width="0dp"
+				        android:layout_height="match_parent"
+				        android:layout_weight="0.7">
+				        
+				        <EditText
+				            android:id="@+id/front_findpwd_idno_text"
+				            android:layout_width="match_parent"
+				            android:layout_height="match_parent"
+				            android:background="@null"
+				            android:hint="请输入身份证后6位"
+							android:inputType="textVisiblePassword"
+				            android:textColorHint="#cccccc"
+				            android:textCursorDrawable="@drawable/text_cursor"
+				            android:textSize="@dimen/dimen_15"
+				            android:textColor="#424242"/> 
+				    </RelativeLayout>
+				</LinearLayout>
+		    </RelativeLayout>
+		    
+		    
+		
+		     <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/dimen_72"
+		        android:layout_marginTop="@dimen/dimen_20">
+		        <LinearLayout
+		            android:id="@+id/front_findpwd_idno_button"
+		            android:background="@drawable/button_normal"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_alignParentTop="true"
+		            android:layout_marginBottom="@dimen/dimen_12"
+		            android:layout_marginLeft="@dimen/dimen_15"
+		            android:layout_marginRight="@dimen/dimen_15"
+		            android:layout_marginTop="@dimen/dimen_12"
+		            android:gravity="center"
+		            android:orientation="vertical" >
+		
+		            <TextView
+		                android:id="@+id/textView7"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="下一步"
+		                android:textColor="#FFFFFF"
+		                android:textSize="@dimen/dimen_18" />
+		        </LinearLayout>
+		    </RelativeLayout>
+
+		</LinearLayout>
+    </ScrollView>
+</LinearLayout>
